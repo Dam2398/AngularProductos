@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';//modulo principal
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from "./app-routing.module";//pal routeo
 //todos los componentes se deben declarar en app.module.ts (aqui)
@@ -14,7 +15,8 @@ import { ListarProductosComponent} from './components/listar-productos/listar-pr
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule//routeo
+    AppRoutingModule,//routeo
+    ReactiveFormsModule//manejar formularios
   ],
   providers: [],
   bootstrap: [AppComponent]//se declara cual es el component inicial sobre el cual se estara cargando todo la aplicacion
